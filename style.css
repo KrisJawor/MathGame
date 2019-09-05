@@ -1,0 +1,177 @@
+html{
+    heigt: 100%;
+    background: radial-gradient(circle, #CFCFCF, #CCC);
+    -moz-background: radial-gradient(circle, #CFCFCF, #CCC);
+    -o-background: radial-gradient(circle, #CFCFCF, #CCC);
+    -webkit-background: radial-gradient(circle, #CFCFCF, #CCC);
+}
+
+#container{
+    height: 400px;
+    width: 550px;
+    background-color: blue;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px;
+    -webkit-box-shadow: 4px 4px 10px;
+    -moz-box-shadow: 4px 4px 10px;
+    position: relative;
+}
+
+#scoreBoard{
+    background-color: yellow;
+    color: saddlebrown;
+    padding: 10px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 2px 2px 10px #9f8c00;
+    -webkit-box-shadow: 2px 2px 10px #9f8c00;
+    -moz-box-shadow: 2px 2px 10px #9f8c00;
+}
+
+#correct{
+    position: absolute;
+    left: 250px;
+    background-color: lawngreen;
+    color: aliceblue;
+    padding: 10px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 210px;
+    background-color: red;
+    color: black;
+    padding: 10px;
+    display: none;
+}
+
+#question{
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: #9BA4ED;
+    box-shadow: 4px 4px 10px #013365;
+    -webkit-box-shadow: 4px 4px 10px #013365;
+    -moz-box-shadow: 4px 4px 10px #013365;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+}
+
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: blueviolet;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 3px 3px 10px #3e0043;
+    -webkit-box-shadow: 3px 3px 10px #3e0043;
+    -moz-box-shadow: 3px 3px 10px #3e0043;
+    font-stretch: expanded;
+}
+
+#choices{
+    height: 100px;
+    width: 450px;
+    margin: 5px auto;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2;
+    -webkit-transition: all 0.2;
+    -moz-transition: all 0.2;
+    -o-transition: all 0.2;
+    -ms-transition: all 0.2;
+}
+
+.box:hover, #startreset:hover{
+    background-color: #9D91FA;
+    color: whitesmoke;
+    box-shadow: 4px 4px  20px purple;
+    -webkit-box-shadow: 4px 4px  20px purple;
+    -moz-box-shadow: 4px 4px  20px purple;
+}
+
+#box4{
+    margin-right: 0px;
+}
+
+.box:active, #startReset:active{
+    box-shadow: 0px 0px;
+    -webkit-box-shadow: 0px 0px;
+    -moz-box-shadow: 0px 0px;
+    top: 4px;
+    
+}
+
+#startReset{
+    width: 120px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    transition: all 0.2;
+    -webkit-transition: all 0.2;
+    -moz-transition: all 0.2;
+    -o-transition: all 0.2;
+    -ms-transition: all 0.2;
+}
+
+#timeRemaining{
+    width: 180px;
+    padding: 10px;
+    position: absolute;
+    top: 395px;
+    left: 380px;
+    background-color: green;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+/*    visibility: hidden;*/
+    display: none;
+}
+
+#gameOver{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F9CD6A, #EC5252);
+    -moz-background: linear-gradient(#F9CD6A, #EC5252);
+    -o-background: linear-gradient(#F9CD6A, #EC5252);
+    -webkit-background: linear-gradient(#F9CD6A, #EC5252);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+}
